@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceblue"
+    android:orientation="vertical" >
+
+    <!-- 顶部菜单 -->
+
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/home_title" />
+
+    <include
+        android:id="@+id/layout_foot_bar"
+        layout="@layout/foot_bar" />
+
+    <ListView
+        android:id="@+id/home_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:background="#BBFFFFFF"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/link"
+        android:dividerHeight="2px"
+        android:fastScrollEnabled="true"
+        android:focusable="true" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_below_nor1">
+
+    <TextView
+        android:id="@+id/tv_search_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/home_title"
+        android:textColor="@color/brown"
+        android:textSize="@dimen/home_title_text_size" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical">
+
+        <ProgressBar
+            android:id="@+id/titleprogressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:indeterminateDrawable="@drawable/list_below_nor"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/title_bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/add_account" />
+    </FrameLayout>
+
+</FrameLayout>

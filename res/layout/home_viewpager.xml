@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- VIewPager 主要是加载内容的 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp" />
+    <!-- 导航和视图的分割线 -->
+
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <!-- 底部按钮 -->
+
+        <RadioGroup
+            android:id="@+id/main_radio111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/tabbar_home"
+                style="@style/main_tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:clickable="true"
+                android:background="@color/aqua"
+                android:drawableTop="@drawable/ic_menu_home32"
+                android:tag="tabbar_home"
+                android:text="@string/home" />
+
+            <RadioButton
+                android:id="@+id/tabbar_message"
+                style="@style/main_tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:clickable="true"
+                android:drawableTop="@drawable/ofm_feedback_icon32"
+                android:tag="tabbar_message"
+                android:text="@string/message" />
+
+            <RadioButton
+                android:id="@+id/tabbar_me"
+                style="@style/main_tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:clickable="true"
+                android:drawableTop="@drawable/actionbar_add_icon32"
+                android:tag="tabbar_me"
+                android:text="@string/me" />
+
+            <RadioButton
+                android:id="@+id/tabbar_discove"
+                style="@style/main_tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:clickable="true"
+                android:drawableTop="@drawable/actionbar_search_icon32"
+                android:tag="tabbar_discove"
+                android:text="@string/discove" />
+
+            <RadioButton
+                android:id="@+id/tabbar_more"
+                style="@style/main_tab_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:clickable="true"
+                android:drawableTop="@drawable/actionbar_more_icon32"
+                android:tag="tabbar_more"
+                android:text="@string/more" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/ll_tabs"
+        android:layout_below="@id/viewpager"
+        android:background="#f00" />
+
+</RelativeLayout>

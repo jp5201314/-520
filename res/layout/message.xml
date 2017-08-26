@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+
+    <!-- 标题头 -->
+
+    <include
+        android:id="@+id/freelook_home_message"
+        layout="@layout/message_title" />
+
+    <ListView
+        android:id="@+id/msglist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/steelblue"
+        android:divider="#FCCC"
+        android:dividerHeight="1.0dip" />
+
+</LinearLayout>
